@@ -1,0 +1,888 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>C++ 模板元編程 · jskyzero's blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="HTML 编写静态网页工具.html" />
+    
+    
+    <link rel="prev" href="../1.博客概览/自我介绍.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">1.博客概览</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.博客概览/自我介绍.html">
+            
+                <a href="../1.博客概览/自我介绍.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    自我介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2.编程语言</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="C++ 模板元編程.html">
+            
+                <a href="C++ 模板元編程.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    C++ 模板元編程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="HTML 编写静态网页工具.html">
+            
+                <a href="HTML 编写静态网页工具.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    HTML 编写静态网页工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="Java GridWorld实训总结.html">
+            
+                <a href="Java GridWorld实训总结.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    Java GridWorld实训总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="Python 配置数据表.html">
+            
+                <a href="Python 配置数据表.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Python 配置数据表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="编程语言学习路径.html">
+            
+                <a href="编程语言学习路径.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    编程语言学习路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3.计算机科学</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../3.计算机科学/人工智能-搜索算法.html">
+            
+                <a href="../3.计算机科学/人工智能-搜索算法.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    人工智能 搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../3.计算机科学/字符编码.html">
+            
+                <a href="../3.计算机科学/字符编码.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    字符编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../3.计算机科学/字节顺序.html">
+            
+                <a href="../3.计算机科学/字节顺序.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    字节顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../3.计算机科学/深度&广度优先搜索.html">
+            
+                <a href="../3.计算机科学/深度&广度优先搜索.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    深度&广度优先搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4.软件工具</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../4.软件工具/Hexo 搭建个人博客.html">
+            
+                <a href="../4.软件工具/Hexo 搭建个人博客.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Hexo 搭建个人博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../4.软件工具/OpenRefine 数据处理.html">
+            
+                <a href="../4.软件工具/OpenRefine 数据处理.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    OpenRefine 数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../4.软件工具/SVN 版本管理工具.html">
+            
+                <a href="../4.软件工具/SVN 版本管理工具.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    SVN 版本管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../4.软件工具/Shell 常用脚本和指令.html">
+            
+                <a href="../4.软件工具/Shell 常用脚本和指令.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Shell 常用脚本和指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../4.软件工具/VsDevCmd 在Shell中的打开姿势.html">
+            
+                <a href="../4.软件工具/VsDevCmd 在Shell中的打开姿势.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    VsDevCmd 在Shell中的打开姿势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../4.软件工具/gitmoji 让你的提交日志更可读.html">
+            
+                <a href="../4.软件工具/gitmoji 让你的提交日志更可读.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Gitmoji 让你的提交日志更可读
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">专题 UNITY</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../专题-UNITY/extend_editor.basic.html">
+            
+                <a href="../专题-UNITY/extend_editor.basic.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Extend Editor.Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../专题-UNITY/mvc-in-unity.html">
+            
+                <a href="../专题-UNITY/mvc-in-unity.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Mvc In Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../专题-UNITY/unity.html">
+            
+                <a href="../专题-UNITY/unity.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../专题-UNITY/扩展-游戏设计.html">
+            
+                <a href="../专题-UNITY/扩展-游戏设计.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    扩展 游戏设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">专题 UWP</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../专题-UWP/async.html">
+            
+                <a href="../专题-UWP/async.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../专题-UWP/mvvm_light.html">
+            
+                <a href="../专题-UWP/mvvm_light.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    Mvvm Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >C++ 模板元編程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x672C;&#x6587;&#x5C07;&#x7D66;&#x51FA;&#x4E00;&#x4E9B;C++&#x6A21;&#x677F;&#x4EE5;&#x53CA;&#x6A21;&#x677F;&#x5143;&#x7684;&#x5BEB;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x4ECB;&#x7D39;&#xFF0C;&#x5C07;&#x6703;&#x7D50;&#x5408;&#x5177;&#x9AD4;&#x7684;&#x4F8B;&#x5B50;&#x5E76;&#x7ADF;&#x53EF;&#x80FD;&#x7684;&#x964D;&#x4F4E;&#x95B1;&#x8B80;&#x9580;&#x6ABB;&#x3002;</p>
+<!--more-->
+<h1 id="c-&#x6A21;&#x677F;&#x5143;&#x7DE8;&#x7A0B;">C++ &#x6A21;&#x677F;&#x5143;&#x7DE8;&#x7A0B;</h1>
+<p><code>jskyzero</code> <code>2019/02/04</code></p>
+<p>&#x5514;&#xFF0C;&#x8D77;&#x56E0;&#x5927;&#x6982;&#x662F;&#x4E0A;&#x4E86;&#x4E00;&#x7BC0;C++&#x6A21;&#x677F;&#x7684;&#x8AB2;&#x7A0B;&#xFF0C;&#x7136;&#x5F8C;&#x4E4B;&#x524D;Sushiscript&#x7684;&#x6642;&#x5019;&#x4E5F;&#x6C92;&#x6709;&#x7CBE;&#x529B;&#x597D;&#x597D;&#x7406;&#x9806;&#x4E00;&#x4E0B;&#x6A21;&#x677F;&#x4EE5;&#x53CA;&#x6A21;&#x677F;&#x5143;&#xFF0C;&#x5E73;&#x6642;&#x4E5F;&#x5F88;&#x5C11;&#x7528;&#x5230;&#xFF0C;&#x5514;&#xFF0C;&#x4E0D;&#x904E;&#x9084;&#x662F;&#x51FA;&#x65BC;&#x597D;&#x5947;&#x5BEB;&#x4E86;&#x9EDE;&#x76F8;&#x95DC;&#x7684;&#x4EE3;&#x78BC;&#xFF0C;&#x73FE;&#x5728;&#x628A;&#x4E00;&#x4E9B;&#x5167;&#x5BB9;&#x6574;&#x7406;&#x51FA;&#x4F86;&#x3002;</p>
+<p>&#x5148;&#x5F9E;&#x6A21;&#x677F;&#x958B;&#x59CB;&#x8AAA;&#x8D77;&#x5427;&#xFF0C;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x6A21;&#x677F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x53C2;&#x6570;&#x5316;&#x7C7B;&#x578B;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x6A21;&#x677F;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x5BF9;&#x6A21;&#x677F;&#x5F62;&#x53C2;&#x8FDB;&#x884C;&#x53C2;&#x6570;&#x5316;&#xFF0C;&#x7F16;&#x8BD1;&#x51FA;&#x5BF9;&#x5E94;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x4EE3;&#x7801;&#xFF0C;C++&#x662F;&#x652F;&#x6301;&#x91CD;&#x8F7D;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x6216;&#x8005;&#x7406;&#x89E3;&#x6210;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD5;&#x7ADF;&#x8FD9;&#x91CC;&#x4E0D;&#x80FD;&#x5355;&#x72EC;&#x5BF9;&#x5E94;&#x51FD;&#x6570;&#xFF0C;&#x5E94;&#x8BE5;&#x4E5F;&#x8981;&#x5305;&#x62EC;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x7C7B;&#x7B49;&#xFF09;&#x53EF;&#x4EE5;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x6A21;&#x677F;&#x4F7F;&#x5F97;&#x8FD9;&#x79CD;&#x5BF9;&#x5E94;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x4E0D;&#x540C;&#x884C;&#x4E3A;&#x5B9E;&#x73B0;&#x8D77;&#x6765;&#x8F83;&#x4E3A;&#x7B80;&#x5355;&#x3002;</p>
+<p>&#x8FD8;&#x662F;&#x7A0D;&#x5FAE;&#x626F;&#x8FDC;&#x4E00;&#x70B9;&#x5427;&#xFF0C;&#x4E0A;&#x9762;&#x5DF2;&#x7ECF;&#x8BF4;&#x4E86;&#x91CD;&#x8F7D;&#x548C;&#x6A21;&#x677F;&#xFF0C;&#x518D;&#x6765;&#x8BF4;&#x4E00;&#x4E0B;&#x6CDB;&#x578B;&#x548C;&#x591A;&#x6001;&#x5427;&#xFF0C;&#x6CDB;&#x578B;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5728;&#x201C;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#x201D;&#x4E2D;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x5728;&#x5B9E;&#x4F8B;&#x5316;&#x65F6;&#x624D;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x4E9B;&#x7C7B;&#x578B;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x6307;&#x5B9A;&#x7684;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x591A;&#x6001;&#x5728;&#x6211;&#x770B;&#x6765;&#x5219;&#x6307;&#x76F8;&#x540C;&#x7B26;&#x53F7;&#x7684;&#x884C;&#x4E3A;&#x7684;&#x5DEE;&#x5F02;&#x6027;&#xFF0C;&#x6BD4;&#x5982;&#x57FA;&#x7C7B;&#x50A8;&#x5B58;&#x4E0D;&#x540C;&#x5B50;&#x7C7B;&#x540E;&#x8C03;&#x7528;&#x76F8;&#x540C;&#x51FD;&#x6570;&#x7684;&#x5DEE;&#x5F02;&#x6027;&#xFF0C;&#x53C8;&#x6BD4;&#x5982;&#x51FD;&#x6570;&#x5728;&#x9762;&#x5BF9;&#x4E0D;&#x540C;&#x53C2;&#x6570;&#x7684;&#x5DEE;&#x5F02;&#x6027;&#xFF0C;&#x540E;&#x8005;&#x5C31;&#x6BD4;&#x8F83;&#x7C7B;&#x4F3C;&#x6CDB;&#x578B;&#x3002;</p>
+<p>&#x8FD8;&#x662F;&#x628A;&#x8BDD;&#x9898;&#x64A4;&#x56DE;&#x6765;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C06;&#x4ECE;&#x6A21;&#x677F;&#xFF0C;&#x6A21;&#x677F;&#x5143;&#xFF0C;&#x518D;&#x5230;&#x6700;&#x540E;&#x7684;&#x6548;&#x7387;&#x6BD4;&#x8F83;&#x6765;&#x5C55;&#x5F00;&#x6587;&#x7AE0;&#x3002;</p>
+<h2 id="&#x6A21;&#x677F;&#x901F;&#x89BD;">&#x6A21;&#x677F;&#x901F;&#x89BD;</h2>
+<p>&#x8FD8;&#x662F;&#x8001;&#x751F;&#x5E38;&#x8C08;&#x6765;&#x8BF4;&#x4E00;&#x4E0B;&#x5427;&#xFF0C;&#x4E0A;&#x9762;&#x5DF2;&#x7ECF;&#x8BF4;&#x4E86;&#x6A21;&#x677F;&#x662F;&#x4EC0;&#x4E48;&#x4E86;&#xFF0C;&#x7136;&#x540E;&#x6A21;&#x677F;&#x7684;&#x597D;&#x5904;&#x7684;&#x8BDD;&#xFF0C;&#x9664;&#x4E86;&#x4E0A;&#x9762;&#x8BF4;&#x7684;&#x51CF;&#x5C11;&#x5DE5;&#x4F5C;&#x91CF;&#xFF0C;&#x8FD8;&#x6709;&#x76F8;&#x6BD4;&#x865A;&#x51FD;&#x6570;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x591A;&#x6001;&#xFF0C;&#x6A21;&#x677F;&#x7684;&#x5F00;&#x9500;&#x66F4;&#x5C11;&#xFF0C;&#x80FD;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#x3002;&#x6A21;&#x677F;&#x5927;&#x6982;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x3001;&#x7C7B;&#x6A21;&#x677F;&#x3001;&#x6210;&#x5458;&#x6A21;&#x677F;&#xFF08;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF09;&#x3002;&#x6A21;&#x677F;&#x5F62;&#x53C2;&#x5219;&#x53EF;&#x4EE5;&#x6709;&#x7C7B;&#x578B;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x3001;&#x975E;&#x7C7B;&#x578B;&#x6A21;&#x677F;&#x53C2;&#x6570;&#x3001;&#x6A21;&#x677F;&#x6A21;&#x677F;&#x53C3;&#x6578;&#x3002;&#x7136;&#x5F8C;&#x4E00;&#x4E9B;&#x908A;&#x7DE3;&#x60C5;&#x6CC1;&#x9700;&#x8981;&#x7528;<code>typename</code>&#x95DC;&#x9375;&#x5B57;&#x624B;&#x52D5;&#x6307;&#x660E;&#x9019;&#x662F;&#x500B;&#x985E;&#x578B;&#xFF0C;&#x9632;&#x6B62;&#x7DE8;&#x8B6F;&#x5668;&#x8AA4;&#x89E3;&#xFF0C;&#x53E6;&#x5916;&#x7684;&#x4E00;&#x4E9B;&#x77E5;&#x8B58;&#x6BD4;&#x5982;&#x4F9D;&#x8CF4;&#x540D;&#x67E5;&#x627E;&#xFF08;ADL&#xFF09;&#x9019;&#x88E1;&#x4E5F;&#x4E0D;&#x5C55;&#x958B;&#x8AAA;&#x4E86;&#x3002;</p>
+<p>&#x7D66;&#x4E00;&#x4E9B;&#x53EF;&#x80FD;&#x5E73;&#x6642;&#x4E0D;&#x592A;&#x6703;&#x898B;&#x5F97;&#x5230;&#x7684;&#x6A21;&#x677F;&#x5BEB;&#x6CD5;&#x5427;&#xFF0C;&#x6BD4;&#x5982;&#x5E95;&#x5C64;&#x662F;&#x6307;&#x91DD;&#x7684;&#x5C6C;&#x6027;&#x7D81;&#x5B9A;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> ParentType, <span class="hljs-keyword">typename</span> MemberType&gt;
+<span class="hljs-keyword">struct</span> Property {
+  <span class="hljs-comment">// typedef member ptr type</span>
+  <span class="hljs-keyword">typedef</span> MemberType ParentType::*MemberPtrType;
+  <span class="hljs-comment">// use pointer to change data</span>
+  MemberPtrType p;
+  <span class="hljs-comment">// bind pointer</span>
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Bind</span><span class="hljs-params">(MemberPtrType p_)</span> </span>{ p = p_; }
+  <span class="hljs-comment">// change data</span>
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Set</span><span class="hljs-params">(ParentType&amp; parent, <span class="hljs-keyword">const</span> MemberType&amp; value)</span> </span>{ parent.*p = value; }
+};
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Property_TEST</span><span class="hljs-params">()</span> </span>{
+  SomeClass sc;
+  <span class="hljs-keyword">auto</span> prop = Property&lt;SomeClass, <span class="hljs-keyword">int</span>&gt;();
+  prop.Bind(&amp;SomeClass::SomeMember);
+  prop.Set(sc, <span class="hljs-number">10</span>);
+
+  assert_equal(sc.SomeMember, <span class="hljs-number">10</span>);
+
+  <span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Pass property test&quot;</span> &lt;&lt; <span class="hljs-built_in">std</span>::<span class="hljs-built_in">endl</span>;
+}
+</code></pre>
+<p>&#x53C8;&#x6BD4;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x7279;&#x5316;&#x5982;&#x5F9E;&#x985E;&#x7684;&#x6210;&#x54E1;&#x7684;&#x6307;&#x91DD;&#x4E2D;&#x7372;&#x53D6;&#x6210;&#x54E1;&#x6216;&#x8005;&#x985E;&#x672C;&#x8EAB;&#x7684;&#x985E;&#x578B;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> TYPE_NAME(x) (typeid(x).name())</span>
+
+<span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> MemPtrType&gt;
+<span class="hljs-keyword">struct</span> GetMemTypeFromMemPtr {
+};
+
+<span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> ParentType, <span class="hljs-keyword">typename</span> Type&gt;
+<span class="hljs-keyword">struct</span> GetMemTypeFromMemPtr&lt;Type ParentType::*&gt; {
+  <span class="hljs-keyword">typedef</span> Type Result;
+};
+
+
+<span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> MemPtrType&gt;
+<span class="hljs-keyword">struct</span> GetClassTypeFromMemPtr {
+};
+
+<span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> ParentType, <span class="hljs-keyword">typename</span> Type&gt;
+<span class="hljs-keyword">struct</span> GetClassTypeFromMemPtr&lt;Type ParentType::*&gt; {
+  <span class="hljs-keyword">typedef</span> ParentType Result;
+};
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">TypeTraits_TEST</span><span class="hljs-params">()</span> </span>{
+  assert_equal(TYPE_NAME(<span class="hljs-keyword">int</span>), TYPE_NAME(<span class="hljs-keyword">int</span>));
+  assert_equal(
+      TYPE_NAME(<span class="hljs-keyword">int</span>),
+      TYPE_NAME(GetMemTypeFromMemPtr&lt;<span class="hljs-keyword">decltype</span>(&amp;SomeStruct::SomeMember)&gt;::Result));
+  assert_equal(
+      TYPE_NAME(SomeStruct),
+      TYPE_NAME(GetClassTypeFromMemPtr&lt;<span class="hljs-keyword">decltype</span>(&amp;SomeStruct::SomeMember)&gt;::Result));
+
+  <span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Pass type-traits test&quot;</span> &lt;&lt; <span class="hljs-built_in">std</span>::<span class="hljs-built_in">endl</span>;
+}
+</code></pre>
+<h2 id="&#x6A21;&#x677F;&#x5143;&#x7DE8;&#x7A0B;&#x901F;&#x89BD;">&#x6A21;&#x677F;&#x5143;&#x7DE8;&#x7A0B;&#x901F;&#x89BD;</h2>
+<h3 id="&#x5F9E;&#x7C21;&#x55AE;&#x7684;&#x958B;&#x59CB;">&#x5F9E;&#x7C21;&#x55AE;&#x7684;&#x958B;&#x59CB;</h3>
+<p>&#x5728;&#x8AC7;&#x53CA;&#x6A21;&#x677F;&#x5143;&#x4E4B;&#x524D;&#xFF0C;&#x4E0D;&#x59A8;&#x5148;&#x60F3;&#x60F3;&#x4EC0;&#x9EBC;&#x662F;&#x5143;&#x7DE8;&#x7A0B;&#xFF0C;&#x7C21;&#x55AE;&#x4F86;&#x8AAA;&#xFF0C;&#x5143;&#x7DE8;&#x7A0B;&#x662F;&#x6307;&#x5C0D;&#x7DE8;&#x7A0B;&#x8A9E;&#x8A00;&#x9032;&#x884C;&#x7DE8;&#x7A0B;&#xFF0C;&#x8209;&#x500B;&#x4F8B;&#x5B50;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x6BB5;shell&#x4EE3;&#x78BC;&#x751F;&#x6210;&#x91CD;&#x8907;&#x82E5;&#x5E72;&#x6B21;&#x6253;&#x5370;&#x4E00;&#x500B;&#x8A9E;&#x53E5;&#x7684;C&#x4EE3;&#x78BC;&#xFF0C;&#x9019;&#x5C31;&#x662F;&#x5143;&#x7DE8;&#x7A0B;&#x3002;&#x6A21;&#x677F;&#x5143;&#x7DE8;&#x7A0B;&#x5247;&#x662F;&#x5229;&#x7528;&#x6A21;&#x677F;&#x4F86;&#x9032;&#x884C;&#x5143;&#x7DE8;&#x7A0B;&#xFF0C;&#x63A5;&#x4E0B;&#x4F86;&#x5C07;&#x6703;&#x7279;&#x5316;&#x5230;C++&#x4E2D;&#x4F86;&#xFF0C;C++&#x4E2D;&#x7684;&#x6A21;&#x677F;&#x56E0;&#x70BA;&#x662F;&#x5716;&#x9748;&#x5B8C;&#x5099;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5728;&#x7DE8;&#x8B6F;&#x6642;&#x5019;&#x5C31;&#x53EF;&#x4EE5;&#x57F7;&#x884C;&#x8A08;&#x7B97;&#x64CD;&#x4F5C;&#xFF0C;&#x9019;&#x6A23;&#x53EF;&#x4EE5;&#x628A;&#x8A08;&#x7B97;&#x904E;&#x7A0B;&#x653E;&#x5728;&#x7DE8;&#x8B6F;&#x6642;&#x671F;&#xFF0C;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#xFF0C;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x6A21;&#x677F;&#x5143;&#x7DE8;&#x7A0B;&#x5927;&#x9AD4;&#x4E0A;&#x6BD4;&#x8F03;&#x53CD;&#x4EBA;&#x985E;&#xFF0C;&#x800C;&#x4E14;&#x8ABF;&#x8A66;&#x56F0;&#x96E3;&#xFF0C;&#x9019;&#x7A2E;&#x5C31;&#x6703;&#x4E0D;&#x5229;&#x65BC;&#x5718;&#x968A;&#x5408;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x5927;&#x6982;&#x81EA;&#x5DF1;&#x5BEB;&#x5BEB;&#x73A9;&#x9084;&#x53EF;&#x4EE5;&#x3002;</p>
+<p>&#x5F9E;&#x4E00;&#x500B;&#x7C21;&#x55AE;&#x7684;&#x8A08;&#x7B97;&#x968E;&#x4E58;&#x7684;&#x4F8B;&#x5B50;&#x958B;&#x59CB;&#x5427;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+
+<span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">int</span> N&gt;
+<span class="hljs-keyword">struct</span> Factorial {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> result = N * Factorial&lt;N - <span class="hljs-number">1</span>&gt;::result;
+};
+
+<span class="hljs-keyword">template</span>&lt;&gt;
+<span class="hljs-keyword">struct</span> Factorial&lt;<span class="hljs-number">0</span>&gt; {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> result = <span class="hljs-number">1</span>;
+};
+
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Factorial_Part</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-built_in">std</span>::<span class="hljs-built_in">endl</span>;
+  <span class="hljs-built_in">std</span>::<span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Factorial(5) = &quot;</span> &lt;&lt; Factorial&lt;<span class="hljs-number">5</span>&gt;::result &lt;&lt; <span class="hljs-built_in">std</span>::<span class="hljs-built_in">endl</span>;
+}
+</code></pre>
+<p>&#x5514;&#xFF0C;&#x7C21;&#x55AE;&#x7684;&#x4F86;&#x8AAA;&#xFF0C;&#x6211;&#x5011;&#x8072;&#x660E;&#x4E86;&#x4E00;&#x500B;<code>Factorial</code>&#x985E;&#xFF0C;&#x7136;&#x5F8C;&#x9019;&#x500B;&#x985E;&#x662F;&#x4E00;&#x500B;&#x63A5;&#x53D7;&#x975E;&#x985E;&#x578B;&#x6A21;&#x677F;&#x53C3;&#x6578;&#x7684;&#x6A21;&#x677F;&#x985E;&#xFF0C;&#x6703;&#x6839;&#x64DA;&#x63A5;&#x53D7;&#x5230;&#x53C3;&#x6578;&#x7684;&#x4E0D;&#x540C;&#x800C;&#x5BE6;&#x4F8B;&#x5316;&#x51FA;&#x4E0D;&#x540C;&#x7684;&#x985E;&#xFF0C;&#x7136;&#x5F8C;&#x95DC;&#x9375;&#x7684;&#x90E8;&#x5206;&#x5728;&#x65BC;&#x90A3;&#x500B;&#x905E;&#x6B78;&#xFF0C;&#x6709;&#x905E;&#x6B78;&#x81EA;&#x7136;&#x6709;&#x7D42;&#x6B62;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x5011;&#x9700;&#x8981;&#x7528;&#x53C3;&#x6578;&#x7279;&#x5316;&#x4F86;&#x6307;&#x5B9A;&#x7D42;&#x7D50;&#x60C5;&#x6CC1;&#x7684;&#x884C;&#x70BA;&#x3002;</p>
+<p>&#x9019;&#x7A2E;&#x601D;&#x7DAD;&#x65B9;&#x5F0F;&#x975E;&#x5E38;&#x985E;&#x4F3C;&#x4E4B;&#x524D;&#x5BEB;&#x904E;&#x7684;haskell&#x4E2D;&#x7684;&#x51FD;&#x6578;&#x5F0F;&#x7DE8;&#x7A0B;&#xFF0C;&#x6BD4;&#x5982;haskell&#x88E1;&#x9762;&#x7684;&#x53D6;&#x53CD;&#x53EF;&#x4EE5;&#x9019;&#x9EBC;&#x5BEB;&#xFF1A;</p>
+<pre><code class="lang-haskell"><span class="hljs-title">myNot</span> :: <span class="hljs-type">Bool</span> -&gt; <span class="hljs-type">Bool</span>
+<span class="hljs-title">myNot</span> <span class="hljs-type">True</span> = <span class="hljs-type">False</span>
+<span class="hljs-title">myNot</span> <span class="hljs-type">False</span> = <span class="hljs-type">True</span>
+<span class="hljs-comment">-- myNot x = not x</span>
+</code></pre>
+<h3 id="&#x5BE6;&#x73FE;&#x4E00;&#x500B;&#x5206;&#x6578;">&#x5BE6;&#x73FE;&#x4E00;&#x500B;&#x5206;&#x6578;</h3>
+<p>&#x5514;&#xFF0C;&#x4F9D;&#x7A00;&#x8A18;&#x5F97;haskell&#x7576;&#x521D;&#x7B2C;&#x4E00;&#x500B;&#x500B;&#x4EBA;&#x4F5C;&#x696D;&#x5C31;&#x662F;&#x5BE6;&#x73FE;&#x4E00;&#x500B;&#x7B26;&#x865F;&#x5B8C;&#x5099;&#x7684;&#x5206;&#x6578;&#x7CFB;&#x7D71;&#xFF0C;&#x90A3;&#x4E0D;&#x59A8;&#x6211;&#x5011;&#x4E5F;&#x632A;&#x5230;&#x9019;&#x88E1;&#x505A;&#x505A;&#x8A66;&#x8A66;&#x770B;&#x597D;&#x4E86;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> TYPE;
+
+<span class="hljs-keyword">template</span> &lt;TYPE x_, TYPE y_&gt;
+<span class="hljs-keyword">struct</span> Pair {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE x = x_;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE y = y_;
+};
+</code></pre>
+<p>&#x6211;&#x5011;&#x4F7F;&#x7528;int&#xFF0C;&#x6216;&#x8005;long long&#xFF0C;&#x6216;&#x8005;&#x4EFB;&#x4F55;&#x4F60;&#x60F3;&#x4F7F;&#x7528;&#x7684;&#x6574;&#x6578;&#x6578;&#x64DA;&#x985E;&#x578B;&#x4F86;&#x5132;&#x5B58;&#x5206;&#x5B50;&#x548C;&#x5206;&#x6BCD;&#xFF0C;&#x70BA;&#x4E86;&#x65B9;&#x4FBF;&#x66F4;&#x6539;&#x9019;&#x88E1;&#x5C31;&#x958B;&#x59CB;&#x5C31;&#x7528;&#x4E86;&#x500B;&#x5225;&#x540D;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">template</span> &lt;TYPE x&gt;
+<span class="hljs-keyword">struct</span> Abs {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE result = x &gt; <span class="hljs-number">0</span> ? x : -x;
+};
+
+
+<span class="hljs-keyword">template</span> &lt;TYPE x, TYPE y&gt;
+<span class="hljs-keyword">struct</span> GCD {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE result = GCD&lt;y, x % y&gt;::result;
+};
+
+<span class="hljs-keyword">template</span> &lt;TYPE x&gt;
+<span class="hljs-keyword">struct</span> GCD&lt;x, <span class="hljs-number">0</span>&gt; {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE result = x;
+};
+
+<span class="hljs-keyword">template</span> &lt;TYPE x_, TYPE y_&gt;
+<span class="hljs-keyword">struct</span> Fraction {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE gcd = GCD&lt;Abs&lt;x_&gt;::result, Abs&lt;y_&gt;::result&gt;::result;
+  <span class="hljs-comment">//   x_  y_  x  y</span>
+  <span class="hljs-comment">//   +   +   +  +</span>
+  <span class="hljs-comment">//   +   -   -  +</span>
+  <span class="hljs-comment">//   -   +   -  +</span>
+  <span class="hljs-comment">//   -   -   +  +</span>
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE sign = y_ &lt; <span class="hljs-number">0</span> ? <span class="hljs-number">-1</span> : <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE x = sign * x_ / gcd;
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE y = Abs&lt;y_&gt;::result / gcd;
+};
+</code></pre>
+<p>&#x7136;&#x5F8C;&#x662F;&#x70BA;&#x4E86;&#x80FD;&#x5920;&#x5316;&#x7C21;&#x7684;&#x6700;&#x5927;&#x516C;&#x56E0;&#x6578;&#x7684;&#x8A08;&#x7B97;&#xFF08;GCD&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x9019;&#x88E1;&#x628A;&#x7B26;&#x865F;&#x7559;&#x5728;&#x5206;&#x5B50;&#x4E0A;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> f1, <span class="hljs-keyword">typename</span> f2&gt;
+<span class="hljs-keyword">struct</span> Addition {
+  <span class="hljs-keyword">typedef</span> Fraction&lt;f1::x * f2::y + f1::y * f2::x, f1::y * f2::y&gt; result;
+};
+
+<span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> f1, <span class="hljs-keyword">typename</span> f2&gt;
+<span class="hljs-keyword">struct</span> Subtraction {
+  <span class="hljs-keyword">typedef</span> Fraction&lt;f1::x * f2::y - f2::x * f1::y, f1::y * f2::y&gt; result;
+};
+</code></pre>
+<p>&#x7136;&#x5F8C;&#x5F8C;&#x9762;&#x7684;&#x5C31;&#x6BD4;&#x8F03;&#x7C21;&#x55AE;&#x4E86;&#xFF0C;&#x52A0;&#x6CD5;&#x6E1B;&#x6CD5;&#x4E58;&#x6CD5;&#x9664;&#x6CD5;&#x90FD;&#x53EF;&#x4EE5;&#x96A8;&#x624B;&#x5BEB;&#x4E86;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> fraction&gt;
+<span class="hljs-built_in">std</span>::<span class="hljs-function"><span class="hljs-built_in">string</span> <span class="hljs-title">FractionToString</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;( &quot;</span> + <span class="hljs-built_in">std</span>::to_string(fraction::x) + <span class="hljs-string">&quot; / &quot;</span> + <span class="hljs-built_in">std</span>::to_string(fraction::y) +
+         <span class="hljs-string">&quot; )&quot;</span>;
+};
+</code></pre>
+<p>&#x9806;&#x8DEF;&#x53EF;&#x4EE5;&#x5BE6;&#x73FE;&#x4E00;&#x500B;&#x65B9;&#x4FBF;&#x6253;&#x5370;&#x7684;&#x51FD;&#x6578;&#x3002;</p>
+<h3 id="&#x5BE6;&#x73FE;&#x4E00;&#x500B;&#x5217;&#x8868;">&#x5BE6;&#x73FE;&#x4E00;&#x500B;&#x5217;&#x8868;</h3>
+<p>&#x63A5;&#x4E0B;&#x4F86;&#x53EF;&#x4EE5;&#x7A0D;&#x5FAE;&#x8655;&#x7406;&#x4E00;&#x4E9B;&#x8907;&#x96DC;&#x7684;&#x6771;&#x897F;&#xFF0C;&#x6BD4;&#x5982;&#x5217;&#x8868;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> TYPE;
+
+<span class="hljs-keyword">template</span> &lt;TYPE x&gt;
+<span class="hljs-keyword">struct</span> Type {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE value = x;
+};
+
+<span class="hljs-keyword">struct</span> NIL {
+  <span class="hljs-keyword">typedef</span> NIL Head;
+  <span class="hljs-keyword">typedef</span> NIL Tail;
+};
+
+<span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> H, <span class="hljs-keyword">typename</span> T = NIL&gt;
+<span class="hljs-keyword">struct</span> List {
+  <span class="hljs-keyword">typedef</span> H Head;
+  <span class="hljs-keyword">typedef</span> T Tail;
+};
+</code></pre>
+<p>&#x7C21;&#x55AE;&#x7684;&#x4F86;&#x8AAA;&#xFF0C;&#x6211;&#x5011;&#x7528;Type&#x9032;&#x884C;&#x4E00;&#x6B21;&#x8F49;&#x63DB;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x4E00;&#x500B;&#x57FA;&#x790E;&#x6578;&#x64DA;&#x985E;&#x578B;&#x7684;&#x503C;&#x8B8A;&#x6210;&#x4E00;&#x500B;&#x985E;&#x578B;&#xFF0C;&#x7136;&#x5F8C;&#x5C31;&#x53EF;&#x4EE5;&#x5217;&#x8868;&#x5C64;&#x5C64;&#x5D4C;&#x5957;&#xFF0C;&#x9019;&#x500B;&#x6642;&#x5019;&#x5982;&#x679C;&#x8981;&#x5BE6;&#x4F8B;&#x5316;&#x9019;&#x500B;&#x5217;&#x8868;&#xFF0C;&#x6703;&#x6BD4;&#x8F03;&#x50CF;&#x9019;&#x500B;&#x6A23;&#x5B50;<code>typedef List&lt;Type&lt;3&gt;&gt; l3;typedef List&lt;Type&lt;2&gt;, l3&gt; l2;</code>&#x3002;</p>
+<p>&#x7136;&#x5F8C;&#x4F86;&#x5BE6;&#x73FE;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x64CD;&#x4F5C;&#x5427;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-comment">// Length</span>
+<span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> <span class="hljs-built_in">list</span>&gt;
+<span class="hljs-keyword">struct</span> Length {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> result = <span class="hljs-number">1</span> + Length&lt;<span class="hljs-keyword">typename</span> <span class="hljs-built_in">list</span>::Tail&gt;::result;
+};
+
+<span class="hljs-keyword">template</span> &lt;&gt;
+<span class="hljs-keyword">struct</span> Length&lt;NIL&gt; {
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">size_t</span> result = <span class="hljs-number">0</span>;
+};
+</code></pre>
+<p>&#x6BD4;&#x5982;&#x7372;&#x53D6;&#x5217;&#x8868;&#x7684;&#x9577;&#x5EA6;&#xFF0C;&#x63D2;&#x5165;&#xFF0C;&#x522A;&#x9664;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x7B49;&#x7B49;&#xFF0C;&#x7576;&#x7136;&#x4E5F;&#x5305;&#x62EC;&#x6253;&#x5370;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-comment">// ListToString</span>
+<span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> <span class="hljs-built_in">list</span>&gt;
+<span class="hljs-built_in">std</span>::<span class="hljs-function"><span class="hljs-built_in">string</span> <span class="hljs-title">ListToString</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;(&quot;</span> + <span class="hljs-built_in">std</span>::to_string(<span class="hljs-built_in">list</span>::Head::value) + <span class="hljs-string">&quot;, &quot;</span> +
+         ListToString&lt;<span class="hljs-keyword">typename</span> <span class="hljs-built_in">list</span>::Tail&gt;() + <span class="hljs-string">&quot;)&quot;</span>;
+};
+
+<span class="hljs-keyword">template</span> &lt;&gt;
+<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> ListToString&lt;NIL&gt;() {
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>(<span class="hljs-string">&quot;NIL&quot;</span>);
+};
+</code></pre>
+<p>&#x5514;&#xFF0C;&#x7136;&#x5F8C;&#x662F;&#x5169;&#x500B;&#x76F8;&#x5C0D;&#x8907;&#x96DC;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-comment">// CreateList</span>
+<span class="hljs-keyword">template</span> &lt;TYPE... lists&gt;
+<span class="hljs-keyword">struct</span> CreateList {
+  <span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> head, <span class="hljs-keyword">typename</span>... tail&gt;
+  <span class="hljs-keyword">struct</span> __CreateList {
+    <span class="hljs-keyword">typedef</span> List&lt;head, <span class="hljs-keyword">typename</span> __CreateList&lt;tail...&gt;::result&gt; result;
+  };
+
+  <span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> head&gt;
+  <span class="hljs-keyword">struct</span> __CreateList&lt;head&gt; {
+    <span class="hljs-keyword">typedef</span> List&lt;head&gt; result;
+  };
+
+  <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">typename</span> __CreateList&lt;Type&lt;lists&gt;...&gt;::result result;
+};
+</code></pre>
+<p>&#x6211;&#x5011;&#x4E0D;&#x59A8;&#x7C21;&#x5316;&#x4E00;&#x4E0B;&#x5275;&#x5EFA;&#x5217;&#x8868;&#x7684;&#x6B65;&#x9A5F;&#xFF0C;&#x73FE;&#x5728;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;<code>typedef CreateList&lt;1, 2, 3&gt;::result l2;</code>&#x9019;&#x9EBC;&#x5275;&#x5EFA;&#x4E00;&#x500B;&#x5217;&#x8868;&#x4E86;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-comment">// Slice [begin, end)</span>
+<span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> <span class="hljs-built_in">list</span>, <span class="hljs-keyword">size_t</span> begin, <span class="hljs-keyword">size_t</span> end&gt;
+<span class="hljs-keyword">struct</span> Slice {
+  <span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">size_t</span> x&gt;
+  <span class="hljs-keyword">struct</span> Type {
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> TYPE value = x;
+  };
+
+  <span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> __list, <span class="hljs-keyword">typename</span> __begin, <span class="hljs-keyword">typename</span> __end&gt;
+  <span class="hljs-keyword">struct</span> __Slice {
+    <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">typename</span> __Slice&lt;
+        <span class="hljs-keyword">typename</span> RemoveItemAt&lt;__list, Length&lt;__list&gt;::result - <span class="hljs-number">1</span>&gt;::result,
+        __begin, __end&gt;::result result;
+  };
+
+  <span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> __list, <span class="hljs-keyword">typename</span> __begin&gt;
+  <span class="hljs-keyword">struct</span> __Slice&lt;__list, __begin, Type&lt;(Length&lt;__list&gt;::result)&gt;&gt; {
+    <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">typename</span> __Slice&lt;<span class="hljs-keyword">typename</span> __<span class="hljs-built_in">list</span>::Tail, Type&lt;__begin::value - <span class="hljs-number">1</span>&gt;,
+                             Type&lt;(Length&lt;__list&gt;::result - <span class="hljs-number">1</span>)&gt;&gt;::result result;
+  };
+
+  <span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> __list&gt;
+  <span class="hljs-keyword">struct</span> __Slice&lt;__list, Type&lt;<span class="hljs-number">0</span>&gt;, Type&lt;(Length&lt;__list&gt;::result)&gt;&gt; {
+    <span class="hljs-keyword">typedef</span> __list result;
+  };
+
+  <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">typename</span> __Slice&lt;
+      <span class="hljs-built_in">list</span>, Type&lt;begin &gt;= <span class="hljs-number">0</span> ? begin : <span class="hljs-number">0</span>&gt;,
+      Type&lt;end &lt;= Length&lt;<span class="hljs-built_in">list</span>&gt;::result ? end : Length&lt;<span class="hljs-built_in">list</span>&gt;::result&gt;&gt;::result
+      result;
+};
+</code></pre>
+<p>&#x7136;&#x5F8C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5BE6;&#x73FE;&#x4E00;&#x500B;&#x5207;&#x7247;&#xFF0C;&#x4E0D;&#x904E;&#x611F;&#x89BA;&#x5C31;&#x6703;&#x6709;&#x9EDE;&#x7E41;&#x96DC;&#x3002;</p>
+<h2 id="&#x6548;&#x7387;&#x6BD4;&#x8F83;">&#x6548;&#x7387;&#x6BD4;&#x8F83;</h2>
+<p>&#x5514;&#xFF0C;&#x9019;&#x88E1;&#x7684;&#x8A71;&#x7C21;&#x55AE;&#x7684;&#x6BD4;&#x8F03;&#x4E00;&#x4E0B;&#x5C31;&#x597D;&#xFF0C;&#x6BD4;&#x5982;&#x50B3;&#x7D71;&#x7684;&#x5BEB;&#x6CD5;&#x53EF;&#x80FD;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span> // for std::cout </span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;cpp.tmp.hpp&quot;</span>  // for kLOOP_TIMES</span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">fatorial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{ <span class="hljs-keyword">return</span> n == <span class="hljs-number">0</span> ? <span class="hljs-number">1</span> : <span class="hljs-function">n * <span class="hljs-title">fatorial</span><span class="hljs-params">(n - <span class="hljs-number">1</span>)</span></span>; }
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; kLOOP_TIMES; i++) {
+    fatorial(<span class="hljs-number">10</span>);
+  }
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>&#x96D6;&#x7136;&#x6BD4;&#x8F03;&#x4E0D;&#x4E00;&#x5B9A;&#x6E96;&#x78BA;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x5C0D;&#x6BD4;&#x4E86;&#x865B;&#x51FD;&#x6578;&#x8ABF;&#x7528;&#x3001;&#x5FAA;&#x74B0;&#x53EF;&#x80FD;&#x88AB;&#x512A;&#x5316;&#x7B49;&#x7B49;&#x5E7E;&#x9805;&#xFF0C;&#x5927;&#x6982;&#x7684;&#x7D50;&#x679C;&#x662F;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &quot;factorial&quot;</span>
+time ././bin/factorial.out
+0.48user 0.01system 0:00.50elapsed 99%CPU (0avgtext+0avgdata 1456maxresident)k
+0inputs+0outputs (0major+415minor)pagefaults 0swaps
+<span class="hljs-comment"># &quot;factorial with template meta programming&quot;</span>
+time ././bin/factorial.tmp.out
+0.03user 0.00system 0:00.02elapsed 106%CPU (0avgtext+0avgdata 1452maxresident)k
+0inputs+0outputs (0major+413minor)pagefaults 0swaps
+<span class="hljs-comment"># &quot;vector&quot;</span>
+time ././bin/vector.out
+4.59user 0.01system 0:04.59elapsed 100%CPU (0avgtext+0avgdata 1464maxresident)k
+0inputs+0outputs (0major+417minor)pagefaults 0swaps
+<span class="hljs-comment"># &quot;vector with template meta programming&quot;</span>
+time ././bin/vector.tmp.out
+4.54user 0.00system 0:04.57elapsed 99%CPU (0avgtext+0avgdata 1460maxresident)k
+0inputs+0outputs (0major+416minor)pagefaults 0swaps
+<span class="hljs-comment"># &quot;polymorphic&quot;</span>
+time ././bin/polymorphic.out
+0.25user 0.01system 0:00.26elapsed 101%CPU (0avgtext+0avgdata 1452maxresident)k
+0inputs+0outputs (0major+415minor)pagefaults 0swaps
+<span class="hljs-comment"># &quot;polymorphic with template meta programming&quot;</span>
+time ././bin/polymorphic.tmp.out
+0.18user 0.00system 0:00.19elapsed 94%CPU (0avgtext+0avgdata 1452maxresident)k
+0inputs+0outputs (0major+414minor)pagefaults 0swaps
+<span class="hljs-comment"># make all compare finished</span>
+</code></pre>
+<p>&#x5177;&#x9AD4;&#x7684;&#x4EE3;&#x78BC;&#x53EF;&#x4EE5;&#x53C3;&#x8003;&#x4E0B;&#x9762;&#x7684;&#x53C3;&#x8003;&#x7684;&#x8AAA;&#x3002;</p>
+<h2 id="&#x53C3;&#x8003;">&#x53C3;&#x8003;</h2>
+<p>&#x53EA;&#x8CBC;<a href="https://github.com/oYOvOYo/Cplusplus.TemplateMetaProgramming" target="_blank">&#x4E00;&#x500B;</a>&#x597D;&#x4E86;&#xFF0C;&#x662F;&#x4E0A;&#x9762;&#x63D0;&#x53CA;&#x7684;&#x5168;&#x90E8;&#x7684;&#x4EE3;&#x78BC;&#x90FD;&#x5728;&#x7684;&#x5009;&#x5EAB;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x53C3;&#x8003;&#x7684;&#x8A71;&#x53EF;&#x4EE5;&#x9EDE;&#x958B;&#x770B;&#x770B;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../1.博客概览/自我介绍.html" class="navigation navigation-prev " aria-label="Previous page: 自我介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="HTML 编写静态网页工具.html" class="navigation navigation-next " aria-label="Next page: HTML 编写静态网页工具">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"post","title":"C++ 模板元編程","header-img":"img/posts/cpp.tmp.png","tags":["C++","Template MetaProgramming","Summary"],"level":"2.1","depth":1,"next":{"title":"HTML 编写静态网页工具","level":"2.2","depth":1,"path":"2.编程语言/HTML 编写静态网页工具.md","ref":"2.编程语言/HTML 编写静态网页工具.md","articles":[]},"previous":{"title":"自我介绍","level":"1.2","depth":1,"path":"1.博客概览/自我介绍.md","ref":"1.博客概览/自我介绍.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"summary":{},"search-pro":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jskyzero's blog","gitbook":"*","description":"本博客为jskyzero所建，用来分享编程相关的内容"},"file":{"path":"2.编程语言/C++ 模板元編程.md","mtime":"2021-06-25T02:49:14.482Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-25T02:50:12.957Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

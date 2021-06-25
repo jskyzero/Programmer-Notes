@@ -1,0 +1,624 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>VsDevCmd 在Shell中的打开姿势 · jskyzero's blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gitmoji 让你的提交日志更可读.html" />
+    
+    
+    <link rel="prev" href="Shell 常用脚本和指令.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">1.博客概览</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.博客概览/自我介绍.html">
+            
+                <a href="../1.博客概览/自我介绍.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    自我介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2.编程语言</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../2.编程语言/C++ 模板元編程.html">
+            
+                <a href="../2.编程语言/C++ 模板元編程.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    C++ 模板元編程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../2.编程语言/HTML 编写静态网页工具.html">
+            
+                <a href="../2.编程语言/HTML 编写静态网页工具.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    HTML 编写静态网页工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../2.编程语言/Java GridWorld实训总结.html">
+            
+                <a href="../2.编程语言/Java GridWorld实训总结.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    Java GridWorld实训总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../2.编程语言/Python 配置数据表.html">
+            
+                <a href="../2.编程语言/Python 配置数据表.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Python 配置数据表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../2.编程语言/编程语言学习路径.html">
+            
+                <a href="../2.编程语言/编程语言学习路径.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    编程语言学习路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3.计算机科学</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../3.计算机科学/人工智能-搜索算法.html">
+            
+                <a href="../3.计算机科学/人工智能-搜索算法.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    人工智能 搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../3.计算机科学/字符编码.html">
+            
+                <a href="../3.计算机科学/字符编码.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    字符编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../3.计算机科学/字节顺序.html">
+            
+                <a href="../3.计算机科学/字节顺序.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    字节顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../3.计算机科学/深度&广度优先搜索.html">
+            
+                <a href="../3.计算机科学/深度&广度优先搜索.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    深度&广度优先搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4.软件工具</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Hexo 搭建个人博客.html">
+            
+                <a href="Hexo 搭建个人博客.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Hexo 搭建个人博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="OpenRefine 数据处理.html">
+            
+                <a href="OpenRefine 数据处理.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    OpenRefine 数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="SVN 版本管理工具.html">
+            
+                <a href="SVN 版本管理工具.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    SVN 版本管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="Shell 常用脚本和指令.html">
+            
+                <a href="Shell 常用脚本和指令.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Shell 常用脚本和指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.5" data-path="VsDevCmd 在Shell中的打开姿势.html">
+            
+                <a href="VsDevCmd 在Shell中的打开姿势.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    VsDevCmd 在Shell中的打开姿势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="gitmoji 让你的提交日志更可读.html">
+            
+                <a href="gitmoji 让你的提交日志更可读.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Gitmoji 让你的提交日志更可读
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">专题 UNITY</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../专题-UNITY/extend_editor.basic.html">
+            
+                <a href="../专题-UNITY/extend_editor.basic.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Extend Editor.Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../专题-UNITY/mvc-in-unity.html">
+            
+                <a href="../专题-UNITY/mvc-in-unity.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Mvc In Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../专题-UNITY/unity.html">
+            
+                <a href="../专题-UNITY/unity.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../专题-UNITY/扩展-游戏设计.html">
+            
+                <a href="../专题-UNITY/扩展-游戏设计.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    扩展 游戏设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">专题 UWP</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../专题-UWP/async.html">
+            
+                <a href="../专题-UWP/async.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../专题-UWP/mvvm_light.html">
+            
+                <a href="../专题-UWP/mvvm_light.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    Mvvm Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >VsDevCmd 在Shell中的打开姿势</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x60F3;&#x5728;PowerShell&#x4E2D;&#x76F4;&#x63A5;&#x7528;VsDevCmd&#x8FD8;&#x662F;&#x9700;&#x8981;&#x70B9;&#x6298;&#x817E;&#x7684;&#xFF0C;&#x672C;&#x6587;&#x5C06;&#x4EE5;&#x4F7F;&#x7528;VsDevCmd&#x4E3A;&#x4F8B;&#x5E26;&#x8BFB;&#x8005;&#x521D;&#x6B65;&#x5B66;&#x4E60;&#x7F16;&#x5199;.bat</p>
+<!--more-->
+<h1 id="vsdevcmd-&#x5728;shell&#x4E2D;&#x7684;&#x6253;&#x5F00;&#x59FF;&#x52BF;">VsDevCmd &#x5728;Shell&#x4E2D;&#x7684;&#x6253;&#x5F00;&#x59FF;&#x52BF;</h1>
+<p><code>jskyzero</code> <code>2017/05/31</code></p>
+<p>&#x770B;&#x5B8C;&#x672C;&#x6587;&#xFF0C;&#x60A8;&#x5C06;&#x53EF;&#x4EE5;&#x5728;PowerShell&#x81EA;&#x5B9A;&#x4E49;&#x8FD0;&#x884C;Visual Studio 2017 &#x7684;VsDevCmd.bat&#xFF0C;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x7F16;&#x8BD1;/&#x8C03;&#x8BD5;&#x7684;&#x65F6;&#x5019;&#x8FD8;&#x662F;&#x633A;&#x65B9;&#x4FBF;&#x7684;&#x3002;</p>
+<h2 id="&#x7B80;&#x4ECB;vsdevcmd">&#x7B80;&#x4ECB;VsDevCmd</h2>
+<p>&#x6211;&#x662F;&#x5728;&#x60F3;&#x5728;PowerShell&#x4E2D;&#x76F4;&#x63A5;&#x8FD0;&#x884C;csc&#x7F16;&#x8BD1;.cs&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#x5F15;&#x8D77;&#x7684;&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#xFF0C;&#x55EF;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5F00;&#x59CB;&#x83DC;&#x5355;&#x7684;Visual Studio 2017&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x627E;&#x5230;Developer Command Prompt for VS 2017&#xFF0C;&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x5C31;&#x63D0;&#x4F9B;&#x7ED9;&#x6211;&#x4EEC;&#x7684;&#x5DE5;&#x5177;&#x4E86;&#xFF0C;&#x4E0D;&#x8FC7;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x7CFB;&#x7EDF;&#x7684;&#x8BDD;&#x4F1A;&#x6709;&#x4E09;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5176;&#x4E00;&#x662F;&#x8FD0;&#x884C;&#x65B9;&#x6CD5;&#x662F;&#x9F20;&#x6807;&#x70B9;&#x51FB;&#xFF0C;&#x8FD9;&#x663E;&#x7136;&#x4E0D;&#x591F;&#x6548;&#x7387;&#xFF0C;&#x5176;&#x4E8C;&#x662F;&#x81EA;&#x5E26;&#x7684;&#x8FD0;&#x884C;&#x7684;&#x8BDD;&#x662F;&#x5728;CMD&#x91CC;&#x9762;&#x7684;&#xFF0C;&#x8BB2;&#x6CE2;&#x9053;&#x7406;ls&#x6307;&#x4EE4;&#x90FD;&#x6CA1;&#x6709;&#x7684;&#x8BDD;&#x8FD8;&#x662F;&#x7528;&#x4E0D;&#x592A;&#x987A;&#x624B;&#xFF0C;&#x5176;&#x4E09;&#x662F;&#x8FD0;&#x884C;&#x65F6;&#x5019;&#x7684;&#x76EE;&#x5F55;&#x4F1A;&#x53D8;&#x6210;&#x6E90;&#x6587;&#x4EF6;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x91CC;&#xFF0C;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x518D;&#x5BFC;&#x822A;&#xFF0C;&#x8FD9;&#x5C31;&#x6BD4;&#x8F83;&#x5C34;&#x5C2C;&#x3002;</p>
+<h2 id="&#x521D;&#x6B65;&#x5C1D;&#x8BD5;">&#x521D;&#x6B65;&#x5C1D;&#x8BD5;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9A;&#x4F4D;&#x4E0B;&#x5F00;&#x59CB;&#x83DC;&#x5355;&#x91CC;&#x9762;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF0C;&#x6765;&#x770B;&#x770B;&#x8FD9;&#x73A9;&#x610F;&#x5177;&#x4F53;&#x662F;&#x5565;&#x3002;
+&#x5728;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x7684;&#x76EE;&#x6807;&#x91CC;&#x9762;&#x5C31;&#x5199;&#x7684;&#x662F; <code>%comspec% /k &quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat&quot;</code>&#xFF0C;&#x6B38;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x627E;&#x5230;&#x4E86;&#x6E90;&#x6587;&#x4EF6;VsDevCmd.bat&#x7684;&#x5730;&#x5740;&#xFF0C;&#x90A3;&#x4E48;&#x521D;&#x6B65;&#x6765;&#x770B;&#x6211;&#x4EEC;&#x6709;&#x4E24;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="&#x76F4;&#x63A5;&#x6DFB;&#x52A0;&#x6E90;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x8DEF;&#x5F84;&#x5230;path">&#x76F4;&#x63A5;&#x6DFB;&#x52A0;&#x6E90;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x8DEF;&#x5F84;&#x5230;Path</h3>
+<p>&#x8FD9;&#x4E2A;&#x60F3;&#x6CD5;&#x7B80;&#x5355;&#x7C97;&#x66B4;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x6BD4;&#x8F83;&#x5B9E;&#x9645;&#xFF0C;&#x57FA;&#x672C;&#x7B49;&#x540C;&#x4E0E;&#x76F4;&#x63A5;&#x8FD0;&#x884C;.bat&#x6587;&#x4EF6;&#xFF0C;&#x5927;&#x6982;&#x7B49;&#x6548;&#x4E0E;&#x8FD0;&#x884C;&#x5982;&#x4E0B;.PS1&#x6587;&#x4EF6;&#xFF1A;
+<code>cd &quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\&quot;
+.\VsDevCmd.bat</code></p>
+<p>&#x9664;&#x4E86;&#x6682;&#x65F6;&#x6CA1;&#x627E;&#x5230;&#x56DE;&#x5230;&#x4E0A;&#x4E00;&#x6B21;&#x76EE;&#x5F55;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x4ED6;&#x90FD;&#x8FD8;&#x633A;&#x597D;&#x7684;&#xFF0C;&#x67E5;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x9664;&#x4E86;&#x50CF;&#x8FD9;&#x6837;&#x5199;function&#x7684;</p>
+<pre><code>function cd { if ($args[0] -eq &apos;-&apos;) { $pwd=$OLDPWD; } else { $pwd=$args[0]; } $tmp=pwd; if ($pwd) { Set-Location $pwd; } Set-Variable -Name OLDPWD -Value $tmp -Scope global; }
+Get-Item function:cd
+</code></pre><p>&#x5C31;&#x662F;&#x8FD9;&#x6837;&#x76F4;&#x63A5;&#x56DE;&#x53BB;&#x7684;</p>
+<pre><code>cd $OLDPWD
+</code></pre><p>&#x4E0D;&#x8FC7;&#x5728;&#x6211;&#x8FD9;&#x91CC;&#x7528;&#x8D77;&#x6765;&#x5C31;&#x4F1A;&#x62A5;&#x5173;&#x4E8E;path&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<h3 id="&#x4FEE;&#x6539;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x6307;&#x4EE4;&#x52A0;&#x5165;powershell">&#x4FEE;&#x6539;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x6307;&#x4EE4;&#x52A0;&#x5165;PowerShell</h3>
+<p>&#x8FD9;&#x4E2A;&#x7684;&#x60F3;&#x6CD5;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x539F;&#x5148;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x6765;&#x8FBE;&#x5230;&#x4F7F;&#x7528;PowerShell&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#x6765;&#x8BF4;&#x4FEE;&#x6539;&#x6210;<code>%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat&quot;  &amp; powershell&quot;</code>&#xFF0C;&#x55EF;&#x8FD9;&#x4E2A;&#x4E5F;&#x662F;&#x6700;&#x597D;&#x80FD;&#x56DE;&#x5230;&#x539F;&#x5148;&#x76EE;&#x5F55;&#x5C31;&#x597D;&#x4E86;&#x3002;</p>
+<h3 id="&#x65B0;&#x5EFA;bat&#x6587;&#x4EF6;">&#x65B0;&#x5EFA;.bat&#x6587;&#x4EF6;</h3>
+<p>&#x56E0;&#x4E3A;&#x662F;&#x81EA;&#x5DF1;&#x65B0;&#x5EFA;&#xFF0C;&#x5F53;&#x7136;&#x53EF;&#x4EE5;&#x5EFA;&#x5230;&#x5DF2;&#x7ECF;Path&#x6709;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x662F;&#x6A21;&#x4EFF;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x5199;&#x7684;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;<code>%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat&quot; &amp; powershell &quot;</code>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x52A0;&#x4E0A;&#x8FD4;&#x56DE;&#x4E0A;&#x4E00;&#x5C42;&#x5C31;&#x597D;&#x4E86;&#xFF1A;<code>%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat&quot; &amp; cd %CD%  &amp; powershell &quot;</code>&#x5B8C;&#x7F8E;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4E86;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x662F;&#x5B8C;&#x5168;&#x81EA;&#x5DF1;&#x65B0;&#x5EFA;&#x7684;&#x8BDD;&#xFF0C;&#x8BB0;&#x5F97;&#x628A;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x52A0;&#x5165;&#x5230;Path&#x4E2D;&#x3002;</p>
+<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+<ul>
+<li><p><a href="https://stackoverflow.com/questions/28889954/what-does-in-this-batch-file" target="_blank">What does &#x201C;&amp;&amp;&#x201D; in this batch file?</a></p>
+</li>
+<li><p><a href="https://www.gurustop.net/blog/2014/02/01/using-visual-studio-developer-command-prompt-with-powershell/" target="_blank">Using Visual Studio Developer Command Prompt With PowerShell</a></p>
+</li>
+<li><p><a href="https://msdn.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/managing-current-location" target="_blank">Managing Current Location</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Shell 常用脚本和指令.html" class="navigation navigation-prev " aria-label="Previous page: Shell 常用脚本和指令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gitmoji 让你的提交日志更可读.html" class="navigation navigation-next " aria-label="Next page: Gitmoji 让你的提交日志更可读">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"post","title":"VsDevCmd 在Shell中的打开姿势","header-img":"img/site/bg1.jpg","tags":["Tools","Microsoft"],"level":"4.5","depth":1,"next":{"title":"Gitmoji 让你的提交日志更可读","level":"4.6","depth":1,"path":"4.软件工具/gitmoji 让你的提交日志更可读.md","ref":"4.软件工具/gitmoji 让你的提交日志更可读.md","articles":[]},"previous":{"title":"Shell 常用脚本和指令","level":"4.4","depth":1,"path":"4.软件工具/Shell 常用脚本和指令.md","ref":"4.软件工具/Shell 常用脚本和指令.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"summary":{},"search-pro":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jskyzero's blog","gitbook":"*","description":"本博客为jskyzero所建，用来分享编程相关的内容"},"file":{"path":"4.软件工具/VsDevCmd 在Shell中的打开姿势.md","mtime":"2021-06-25T02:49:14.482Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-25T02:50:12.957Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

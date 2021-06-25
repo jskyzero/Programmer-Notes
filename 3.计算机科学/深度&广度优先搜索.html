@@ -1,0 +1,729 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>深度&广度优先搜索 · jskyzero's blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../4.软件工具/Hexo 搭建个人博客.html" />
+    
+    
+    <link rel="prev" href="字节顺序.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">1.博客概览</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.博客概览/自我介绍.html">
+            
+                <a href="../1.博客概览/自我介绍.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    自我介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2.编程语言</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../2.编程语言/C++ 模板元編程.html">
+            
+                <a href="../2.编程语言/C++ 模板元編程.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    C++ 模板元編程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../2.编程语言/HTML 编写静态网页工具.html">
+            
+                <a href="../2.编程语言/HTML 编写静态网页工具.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    HTML 编写静态网页工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../2.编程语言/Java GridWorld实训总结.html">
+            
+                <a href="../2.编程语言/Java GridWorld实训总结.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    Java GridWorld实训总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../2.编程语言/Python 配置数据表.html">
+            
+                <a href="../2.编程语言/Python 配置数据表.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Python 配置数据表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../2.编程语言/编程语言学习路径.html">
+            
+                <a href="../2.编程语言/编程语言学习路径.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    编程语言学习路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3.计算机科学</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="人工智能-搜索算法.html">
+            
+                <a href="人工智能-搜索算法.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    人工智能 搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="字符编码.html">
+            
+                <a href="字符编码.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    字符编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="字节顺序.html">
+            
+                <a href="字节顺序.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    字节顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="深度&广度优先搜索.html">
+            
+                <a href="深度&广度优先搜索.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    深度&广度优先搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4.软件工具</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../4.软件工具/Hexo 搭建个人博客.html">
+            
+                <a href="../4.软件工具/Hexo 搭建个人博客.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Hexo 搭建个人博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../4.软件工具/OpenRefine 数据处理.html">
+            
+                <a href="../4.软件工具/OpenRefine 数据处理.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    OpenRefine 数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../4.软件工具/SVN 版本管理工具.html">
+            
+                <a href="../4.软件工具/SVN 版本管理工具.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    SVN 版本管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../4.软件工具/Shell 常用脚本和指令.html">
+            
+                <a href="../4.软件工具/Shell 常用脚本和指令.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Shell 常用脚本和指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../4.软件工具/VsDevCmd 在Shell中的打开姿势.html">
+            
+                <a href="../4.软件工具/VsDevCmd 在Shell中的打开姿势.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    VsDevCmd 在Shell中的打开姿势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../4.软件工具/gitmoji 让你的提交日志更可读.html">
+            
+                <a href="../4.软件工具/gitmoji 让你的提交日志更可读.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Gitmoji 让你的提交日志更可读
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">专题 UNITY</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../专题-UNITY/extend_editor.basic.html">
+            
+                <a href="../专题-UNITY/extend_editor.basic.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Extend Editor.Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../专题-UNITY/mvc-in-unity.html">
+            
+                <a href="../专题-UNITY/mvc-in-unity.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Mvc In Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../专题-UNITY/unity.html">
+            
+                <a href="../专题-UNITY/unity.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../专题-UNITY/扩展-游戏设计.html">
+            
+                <a href="../专题-UNITY/扩展-游戏设计.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    扩展 游戏设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">专题 UWP</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../专题-UWP/async.html">
+            
+                <a href="../专题-UWP/async.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../专题-UWP/mvvm_light.html">
+            
+                <a href="../专题-UWP/mvvm_light.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    Mvvm Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >深度&广度优先搜索</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6DF1;&#x5EA6;&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;">&#x6DF1;&#x5EA6;&amp;&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;</h1>
+<p><code>jskyzero</code> <code>2020/10/12</code></p>
+<p>&#x672C;&#x6587;&#x5C06;&#x4EE5;LeetCode&#x7684;&#x4F8B;&#x9898;&#x4E3A;&#x4F8B;&#x5B50;&#xFF0C;&#x7528;Python&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x3001;&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;&#x3002;</p>
+<h2 id="dfs&#x6DF1;&#x5EA6;&#x4F18;&#x5148;">DFS/&#x6DF1;&#x5EA6;&#x4F18;&#x5148;</h2>
+<p>&#x4F8B;&#x9898;&#xFF1A;<a href="https://leetcode.com/problems/increasing-order-search-tree/" target="_blank">Increasing Order Search Tree</a></p>
+<p>&#x9898;&#x610F;&#xFF1A;&#x524D;&#x5E8F;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x904D;&#x5386;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x8981;&#x6C42;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x5148;&#x7B80;&#x5355;&#x5B9E;&#x73B0;&#x8FD9;&#x90E8;&#x5206;&#x7684;&#x903B;&#x8F91;</p>
+<pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">saveResult</span><span class="hljs-params">(self, node: TreeNode)</span> -&gt; <span class="hljs-keyword">None</span>:</span>
+        <span class="hljs-keyword">if</span> node == <span class="hljs-keyword">None</span>: <span class="hljs-keyword">return</span>
+        <span class="hljs-comment"># print(node.val)</span>
+
+        <span class="hljs-keyword">if</span> self.result == <span class="hljs-keyword">None</span>:
+            self.result = TreeNode(node.val, <span class="hljs-keyword">None</span>, <span class="hljs-keyword">None</span>)
+            self.resultTop = self.result
+        <span class="hljs-keyword">else</span>:
+            self.resultTop.right = TreeNode(node.val, <span class="hljs-keyword">None</span>, <span class="hljs-keyword">None</span>)
+            self.resultTop = self.resultTop.right
+</code></pre>
+<p>&#x9012;&#x5F52;&#x5F62;&#x5F0F;&#x7684;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x5F88;&#x597D;&#x5199;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># Definition for a binary tree node.</span>
+<span class="hljs-comment"># class TreeNode:</span>
+<span class="hljs-comment">#     def __init__(self, val=0, left=None, right=None):</span>
+<span class="hljs-comment">#         self.val = val</span>
+<span class="hljs-comment">#         self.left = left</span>
+<span class="hljs-comment">#         self.right = right</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">increasingBST</span><span class="hljs-params">(self, root: TreeNode)</span> -&gt; TreeNode:</span>
+        self.result = <span class="hljs-keyword">None</span>
+        self.dfs(root)
+        <span class="hljs-keyword">return</span> self.result
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">dfs</span><span class="hljs-params">(self, root: TreeNode)</span> -&gt; <span class="hljs-keyword">None</span>:</span>
+        <span class="hljs-keyword">if</span> root == <span class="hljs-keyword">None</span>: <span class="hljs-keyword">return</span>
+        self.dfs(root.left)
+        self.saveResult(root)
+        self.dfs(root.right)
+</code></pre>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x6CE8;&#x610F;<code>None</code>&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x4EE5;&#x53CA;&#x662F;&#x524D;&#x5E8F;&#x4E2D;&#x5E8F;&#x8FD8;&#x662F;&#x540E;&#x5E8F;&#x5C31;&#x884C;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x4E5F;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7528;&#x6808;&#x66FF;&#x4EE3;&#x9012;&#x5F52;&#x5B9E;&#x73B0;&#x7684;&#x7248;&#x672C;&#xFF1A;</p>
+<pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">dfs</span><span class="hljs-params">(self, root: TreeNode)</span> -&gt; <span class="hljs-keyword">None</span>:</span>
+        <span class="hljs-keyword">if</span> root == <span class="hljs-keyword">None</span>: <span class="hljs-keyword">return</span>
+        stack = [root]
+
+        <span class="hljs-keyword">while</span> (len(stack) != <span class="hljs-number">0</span>):
+
+            top = stack.pop()
+            <span class="hljs-comment"># print(len(stack))</span>
+
+            <span class="hljs-keyword">if</span> top.left == <span class="hljs-keyword">None</span> <span class="hljs-keyword">and</span> top.right == <span class="hljs-keyword">None</span>:
+                self.saveResult(top)
+            <span class="hljs-keyword">else</span>:
+                left = top.left
+                right = top.right
+                top.left = <span class="hljs-keyword">None</span>
+                top.right = <span class="hljs-keyword">None</span>
+
+                <span class="hljs-keyword">if</span> right != <span class="hljs-keyword">None</span>: stack.append(right)
+                stack.append(top)
+                <span class="hljs-keyword">if</span> left != <span class="hljs-keyword">None</span>: stack.append(left)
+</code></pre>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x7528;&#x6808;&#x7684;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#x6765;&#x4E00;&#x76F4;&#x904D;&#x5386;&#xFF0C;&#x53D6;&#x51FA;&#x6808;&#x7684;&#x9996;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x6309;&#x7167;&#x987A;&#x5E8F;&#x53CD;&#x5411;&#x538B;&#x8FDB;&#x6808;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x6709;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#x8FD9;&#x91CC;&#x5C06;&#x5904;&#x7406;&#x7684;&#x6808;&#x5B9A;&#x5143;&#x7D20;&#x624B;&#x52A8;&#x53D8;&#x6210;&#x4E86;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x91CD;&#x65B0;&#x538B;&#x6808;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x662F;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#xFF0C;&#x540E;&#x7EED;&#x518D;&#x5904;&#x7406;&#x5230;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x53D6;&#x51FA;&#x5DE6;&#x53F3;&#x76F8;&#x8FDE;&#x8282;&#x70B9;&#xFF0C;&#x4F1A;&#x518D;&#x6B21;&#x5C06;&#x5DE6;&#x53F3;&#x76F8;&#x8FDE;&#x8282;&#x70B9;&#x538B;&#x6808;&#x4ECE;&#x800C;&#x6B7B;&#x5FAA;&#x73AF;&#x3002;</p>
+<h2 id="bfs&#x5E7F;&#x5EA6;&#x4F18;&#x5148;">BFS/&#x5E7F;&#x5EA6;&#x4F18;&#x5148;</h2>
+<p>&#x4F8B;&#x9898;&#xFF1A;<a href="https://leetcode.com/problems/symmetric-tree/" target="_blank">Symmetric Tree</a></p>
+<p>&#x9898;&#x610F;&#xFF1A;&#x5BF9;&#x6839;&#x8282;&#x70B9;&#x53F3;&#x8FB9;&#x7684;&#x5B50;&#x6811;&#x8FDB;&#x884C;&#x53CD;&#x5411;&#x7684;&#x904D;&#x5386;&#x4E0E;&#x5DE6;&#x8FB9;&#x6BD4;&#x8F83;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x5176;&#x5B9E;&#x4E0D;&#x4E00;&#x5B9A;&#x4E25;&#x683C;&#x8981;&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#xFF0C;&#x4E0D;&#x8FC7;&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x662F;&#x6700;&#x666E;&#x904D;&#x7684;&#x904D;&#x5386;&#x6811;&#x7684;&#x6253;&#x5370;&#x65B9;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># Definition for a binary tree node.</span>
+<span class="hljs-comment"># class TreeNode:</span>
+<span class="hljs-comment">#     def __init__(self, val=0, left=None, right=None):</span>
+<span class="hljs-comment">#         self.val = val</span>
+<span class="hljs-comment">#         self.left = left</span>
+<span class="hljs-comment">#         self.right = right</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">isSymmetric</span><span class="hljs-params">(self, root: TreeNode)</span> -&gt; bool:</span>
+        <span class="hljs-keyword">if</span> root == <span class="hljs-keyword">None</span>: <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span>
+        left = []
+        right = []
+        self.bfsLeft(root.left, left)
+        self.bfsRight(root.right, right)
+
+        <span class="hljs-comment"># print(left)</span>
+        <span class="hljs-comment"># print(right)</span>
+        <span class="hljs-keyword">return</span> left == right
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bfsLeft</span><span class="hljs-params">(self, root: TreeNode, result: list)</span>:</span>
+        queen = [root]
+
+        <span class="hljs-keyword">while</span> len(queen) != <span class="hljs-number">0</span>:
+            top = queen.pop(<span class="hljs-number">0</span>)
+
+            <span class="hljs-keyword">if</span> top != <span class="hljs-keyword">None</span>:
+                result.append(top.val)
+                queen.append(top.left)
+                queen.append(top.right)
+            <span class="hljs-keyword">else</span>:
+                result.append(<span class="hljs-keyword">None</span>)
+
+        <span class="hljs-keyword">return</span> result
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bfsRight</span><span class="hljs-params">(self, root: TreeNode, result: list)</span>:</span>
+        queen = [root]
+
+        <span class="hljs-keyword">while</span> len(queen) != <span class="hljs-number">0</span>:
+            top = queen.pop(<span class="hljs-number">0</span>)
+
+            <span class="hljs-keyword">if</span> top != <span class="hljs-keyword">None</span>:
+                result.append(top.val)
+                queen.append(top.right)
+                queen.append(top.left)
+            <span class="hljs-keyword">else</span>:
+                result.append(<span class="hljs-keyword">None</span>)
+
+        <span class="hljs-keyword">return</span> result
+</code></pre>
+<p>&#x7528;&#x961F;&#x5217;&#x5B9E;&#x73B0;&#xFF0C;&#x5176;&#x5B9E;&#x8FD8;&#x7B97;&#x7B80;&#x5355;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x91CC;&#x56E0;&#x4E3A;&#x7A7A;&#x503C;&#x4E5F;&#x8981;&#x6BD4;&#x8F83;&#x6240;&#x4EE5;&#x7A7A;&#x503C;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x4E0D;&#x592A;&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x9012;&#x5F52;&#x5F62;&#x5F0F;&#x7684;DFS&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bfsLeft</span><span class="hljs-params">(self, top: TreeNode, result: list)</span>:</span>        
+
+        <span class="hljs-keyword">if</span> top != <span class="hljs-keyword">None</span>:
+            result.append(top.val)
+            self.bfsLeft(top.left, result)
+            self.bfsLeft(top.right, result)                
+        <span class="hljs-keyword">else</span>:
+            result.append(<span class="hljs-keyword">None</span>)
+
+        <span class="hljs-keyword">return</span> result
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bfsRight</span><span class="hljs-params">(self, top: TreeNode, result: list)</span>:</span>        
+
+        <span class="hljs-keyword">if</span> top != <span class="hljs-keyword">None</span>:
+            result.append(top.val)
+            self.bfsRight(top.right, result) 
+            self.bfsRight(top.left, result)                          
+        <span class="hljs-keyword">else</span>:
+            result.append(<span class="hljs-keyword">None</span>)
+
+        <span class="hljs-keyword">return</span> result
+</code></pre>
+<p>&#x5982;&#x679C;&#x786C;&#x8981;&#x7528;&#x9012;&#x5F52;&#x672C;&#x8D28;&#x7684;DFS&#x6765;&#x6A21;&#x4EFF;BFS&#x7684;&#x6253;&#x5370;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x5F15;&#x5165;&#x989D;&#x5916;&#x7684;&#x6807;&#x8BB0;&#x5B57;&#x6BB5; &#x4E0D;&#x8FC7;&#x5C31;&#x6709;&#x70B9;&#x5F97;&#x4E0D;&#x5C1D;&#x8BD5;&#xFF0C;&#x6BD5;&#x7ADF;DFS&#x5F88;&#x5BB9;&#x6613;&#x7206;&#x6808;&#xFF0C;&#x800C;BFS&#x5219;&#x53EF;&#x4EE5;&#x6BD4;&#x8F83;&#x65B9;&#x4FBF;&#x7684;&#x63A7;&#x5236;&#x961F;&#x5217;&#x5927;&#x5C0F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="字节顺序.html" class="navigation navigation-prev " aria-label="Previous page: 字节顺序">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../4.软件工具/Hexo 搭建个人博客.html" class="navigation navigation-next " aria-label="Next page: Hexo 搭建个人博客">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"深度&广度优先搜索","level":"3.4","depth":1,"next":{"title":"Hexo 搭建个人博客","level":"4.1","depth":1,"path":"4.软件工具/Hexo 搭建个人博客.md","ref":"4.软件工具/Hexo 搭建个人博客.md","articles":[]},"previous":{"title":"字节顺序","level":"3.3","depth":1,"path":"3.计算机科学/字节顺序.md","ref":"3.计算机科学/字节顺序.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"summary":{},"search-pro":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jskyzero's blog","gitbook":"*","description":"本博客为jskyzero所建，用来分享编程相关的内容"},"file":{"path":"3.计算机科学/深度&广度优先搜索.md","mtime":"2021-06-25T02:49:14.482Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-25T02:50:12.957Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

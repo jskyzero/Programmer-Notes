@@ -1,0 +1,703 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>人工智能 搜索算法 · jskyzero's blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="字符编码.html" />
+    
+    
+    <link rel="prev" href="../2.编程语言/编程语言学习路径.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">1.博客概览</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1.博客概览/自我介绍.html">
+            
+                <a href="../1.博客概览/自我介绍.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    自我介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2.编程语言</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../2.编程语言/C++ 模板元編程.html">
+            
+                <a href="../2.编程语言/C++ 模板元編程.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    C++ 模板元編程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../2.编程语言/HTML 编写静态网页工具.html">
+            
+                <a href="../2.编程语言/HTML 编写静态网页工具.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    HTML 编写静态网页工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../2.编程语言/Java GridWorld实训总结.html">
+            
+                <a href="../2.编程语言/Java GridWorld实训总结.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    Java GridWorld实训总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../2.编程语言/Python 配置数据表.html">
+            
+                <a href="../2.编程语言/Python 配置数据表.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Python 配置数据表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../2.编程语言/编程语言学习路径.html">
+            
+                <a href="../2.编程语言/编程语言学习路径.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    编程语言学习路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3.计算机科学</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="人工智能-搜索算法.html">
+            
+                <a href="人工智能-搜索算法.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    人工智能 搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="字符编码.html">
+            
+                <a href="字符编码.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    字符编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="字节顺序.html">
+            
+                <a href="字节顺序.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    字节顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="深度&广度优先搜索.html">
+            
+                <a href="深度&广度优先搜索.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    深度&广度优先搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4.软件工具</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../4.软件工具/Hexo 搭建个人博客.html">
+            
+                <a href="../4.软件工具/Hexo 搭建个人博客.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Hexo 搭建个人博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../4.软件工具/OpenRefine 数据处理.html">
+            
+                <a href="../4.软件工具/OpenRefine 数据处理.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    OpenRefine 数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../4.软件工具/SVN 版本管理工具.html">
+            
+                <a href="../4.软件工具/SVN 版本管理工具.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    SVN 版本管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../4.软件工具/Shell 常用脚本和指令.html">
+            
+                <a href="../4.软件工具/Shell 常用脚本和指令.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Shell 常用脚本和指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../4.软件工具/VsDevCmd 在Shell中的打开姿势.html">
+            
+                <a href="../4.软件工具/VsDevCmd 在Shell中的打开姿势.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    VsDevCmd 在Shell中的打开姿势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../4.软件工具/gitmoji 让你的提交日志更可读.html">
+            
+                <a href="../4.软件工具/gitmoji 让你的提交日志更可读.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Gitmoji 让你的提交日志更可读
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">专题 UNITY</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../专题-UNITY/extend_editor.basic.html">
+            
+                <a href="../专题-UNITY/extend_editor.basic.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Extend Editor.Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../专题-UNITY/mvc-in-unity.html">
+            
+                <a href="../专题-UNITY/mvc-in-unity.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Mvc In Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../专题-UNITY/unity.html">
+            
+                <a href="../专题-UNITY/unity.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    Unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../专题-UNITY/扩展-游戏设计.html">
+            
+                <a href="../专题-UNITY/扩展-游戏设计.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    扩展 游戏设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">专题 UWP</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../专题-UWP/async.html">
+            
+                <a href="../专题-UWP/async.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../专题-UWP/mvvm_light.html">
+            
+                <a href="../专题-UWP/mvvm_light.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    Mvvm Light
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >人工智能 搜索算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x672C;&#x6587;&#x5C07;&#x4EE5;&#x516B;&#x6570;&#x7801;&#x95EE;&#x9898;&#x4E3A;&#x4F8B;&#xFF0C;&#x8BA8;&#x8BBA;&#x5728;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x65F6;&#x5019;&#x7684;&#x641C;&#x7D22;&#x7B97;&#x6CD5;&#x7684;&#x9009;&#x62E9;&#x548C;&#x4F18;&#x5316;&#x3002;</p>
+<!--more-->
+<h1 id="&#x4EBA;&#x5DE5;&#x667A;&#x80FD;-&#x641C;&#x7D22;&#x7B97;&#x6CD5;">&#x4EBA;&#x5DE5;&#x667A;&#x80FD;-&#x641C;&#x7D22;&#x7B97;&#x6CD5;</h1>
+<p><code>jskyzero</code> <code>2017/10/11</code></p>
+<h2 id="&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x95EE;&#x9898;&#x5207;&#x5165;">&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x95EE;&#x9898;&#x5207;&#x5165;</h2>
+<p>&#x5176;&#x5B9E;&#x4E0D;&#x7528;&#x7279;&#x522B;&#x5173;&#x6CE8;&#x516B;&#x6570;&#x7801;&#x7A76;&#x7ADF;&#x662F;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#xFF0C;&#x603B;&#x4E4B;&#x4E5F;&#x662F;&#x7ED9;&#x6211;&#x4EEC;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#xFF0C;&#x8F93;&#x51FA;&#xFF0C;&#x53D8;&#x5316;&#x89C4;&#x5219;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x60F3;&#x529E;&#x6CD5;&#x627E;&#x5230;&#x4ECE;&#x8F93;&#x5165;&#x5230;&#x8F93;&#x51FA;&#x7684;&#x4E00;&#x4E2A;&#x53D8;&#x5316;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x5177;&#x4F53;&#x770B;&#x4E0B;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#xFF0C;&#x8F93;&#x5165;&#x7684;&#x662F;&#x5305;&#x542B;<code>0</code>&#x7684;&#x4E5D;&#x4E2A;&#x6570;&#xFF0C;&#x4EE3;&#x8868;&#x4E5D;&#x4E2A;&#x683C;&#x5B50;&#x73B0;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x8F93;&#x51FA;&#x662F;&#x6309;&#x7167;1-8&#xFF0C;&#x6700;&#x540E;&#x662F;0&#x7684;&#x987A;&#x5E8F;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8981;&#x628A;&#x6570;&#x5B57;&#x653E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x683C;&#x5B50;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x7136;&#x540E;&#x53D8;&#x5316;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#xFF0C;&#x79FB;&#x52A8;0&#x548C;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x7684;&#x6570;&#x5B57;&#x4EA4;&#x6362;&#x3002;</p>
+<h2 id="&#x5C06;&#x95EE;&#x9898;&#x8F6C;&#x5316;&#x5230;&#x641C;&#x7D22;&#x4E0A;">&#x5C06;&#x95EE;&#x9898;&#x8F6C;&#x5316;&#x5230;&#x641C;&#x7D22;&#x4E0A;</h2>
+<p>&#x6BCF;&#x4E2A;&#x72B6;&#x6001;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#xFF0C;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x7531;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x8F6C;&#x5316;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x4E00;&#x6761;&#x6709;&#x5411;&#x8FB9;&#xFF0C;&#x53D1;&#x73B0;&#x91CD;&#x590D;&#x7684;&#x72B6;&#x6001;&#x7684;&#x8BDD;&#x5C31;&#x4E0D;&#x5728;&#x751F;&#x6210;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x628A;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x53D8;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x6709;&#x5411;&#x65E0;&#x73AF;&#x56FE;&#xFF08;&#x6811;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x904D;&#x5386;&#x8FD9;&#x68F5;&#x6811;&#xFF0C;&#x627E;&#x5230;&#x7B26;&#x5408;&#x7684;&#x76EE;&#x6807;&#x72B6;&#x6001;&#xFF0C;&#x5C31;&#x7B97;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x4E86;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x6811;&#x7684;&#x904D;&#x5386;&#x6211;&#x4EEC;&#x662F;&#x719F;&#x6089;&#x7684;&#xFF0C;&#x65E0;&#x5916;&#x4E4E;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x3002;</p>
+<p>&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x6700;&#x4F18;&#x89E3;&#xFF0C;&#x4F46;&#x662F;&#x76F8;&#x5BF9;&#x800C;&#x8A00;&#x5BF9;&#x5185;&#x5B58;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x9700;&#x6C42;&#x8981;&#x9AD8;&#x4E00;&#x4E9B;&#xFF0C;&#x6DF1;&#x5EA6;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x5728;&#x5185;&#x5B58;&#x4E0D;&#x8DB3;&#x7684;&#x65F6;&#x5019;&#x8D77;&#x5230;&#x5173;&#x952E;&#x4F5C;&#x7528;&#x3002;</p>
+<h2 id="&#x968F;&#x4FBF;&#x5B9E;&#x73B0;&#x4E00;&#x4E0B;&#x903B;&#x8F91;">&#x968F;&#x4FBF;&#x5B9E;&#x73B0;&#x4E00;&#x4E0B;&#x903B;&#x8F91;</h2>
+<p>&#x5F15;&#x5165;&#x5934;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> heapq
+
+initial = [<span class="hljs-number">8</span>, <span class="hljs-number">7</span>, <span class="hljs-number">6</span>, <span class="hljs-number">5</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>]
+final = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">0</span>]
+</code></pre>
+<p>&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x51FD;&#x6570;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sub_move_choice</span><span class="hljs-params">(now_state)</span>:</span>
+    next_state = []
+    <span class="hljs-comment"># 0 1 2</span>
+    <span class="hljs-comment"># 3 4 5</span>
+    <span class="hljs-comment"># 6 7 8</span>
+    index = now_state.index(<span class="hljs-number">0</span>)
+    <span class="hljs-keyword">if</span> index % <span class="hljs-number">3</span> == <span class="hljs-number">0</span>:
+        next_state.append(swap(now_state, index, index + <span class="hljs-number">1</span>))
+    <span class="hljs-keyword">if</span> index % <span class="hljs-number">3</span> == <span class="hljs-number">1</span>:
+        next_state.append(swap(now_state, index, index - <span class="hljs-number">1</span>))
+        next_state.append(swap(now_state, index, index + <span class="hljs-number">1</span>))
+    <span class="hljs-keyword">if</span> index % <span class="hljs-number">3</span> == <span class="hljs-number">2</span>:
+        next_state.append(swap(now_state, index, index - <span class="hljs-number">1</span>))
+    <span class="hljs-keyword">if</span> index // <span class="hljs-number">3</span> == <span class="hljs-number">0</span>:
+        next_state.append(swap(now_state, index, index + <span class="hljs-number">3</span>))
+    <span class="hljs-keyword">if</span> index // <span class="hljs-number">3</span> == <span class="hljs-number">1</span>:
+        next_state.append(swap(now_state, index, index - <span class="hljs-number">3</span>))
+        next_state.append(swap(now_state, index, index + <span class="hljs-number">3</span>))
+    <span class="hljs-keyword">if</span> index // <span class="hljs-number">3</span> == <span class="hljs-number">2</span>:
+        next_state.append(swap(now_state, index, index - <span class="hljs-number">3</span>))
+    <span class="hljs-keyword">return</span> next_state
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">swap</span><span class="hljs-params">(now_state, left, right)</span>:</span>
+    new_state = now_state[:]
+    temp = new_state[left]
+    new_state[left] = new_state[right]
+    new_state[right] = temp
+    <span class="hljs-keyword">return</span> new_state
+</code></pre>
+<p>&#x6838;&#x5FC3;&#x90E8;&#x5206;</p>
+<pre><code class="lang-python">
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">BFS</span><span class="hljs-params">(initial_state, end_state)</span>:</span>
+    next_states = [initial_state]
+    traveled = set(tuple(initial_state))
+    depth = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> end_state <span class="hljs-keyword">in</span> next_states <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> len(next_states) == <span class="hljs-number">0</span>:
+        depth = depth + <span class="hljs-number">1</span>
+        new_next_states = []
+        <span class="hljs-keyword">for</span> next_state <span class="hljs-keyword">in</span> next_states:
+            <span class="hljs-keyword">for</span> sub_next_state <span class="hljs-keyword">in</span> sub_move_choice(next_state):
+                <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> tuple(sub_next_state) <span class="hljs-keyword">in</span> traveled:
+                    new_next_states.append(sub_next_state)
+                    traveled.add(tuple(sub_next_state))
+        next_states = new_next_states[:]
+        <span class="hljs-comment"># print(&quot;depth = &quot;, depth,</span>
+        <span class="hljs-comment">#       &quot;len = &quot;, len(new_next_states),</span>
+        <span class="hljs-comment">#       &quot;traveled = &quot;, len(traveled))</span>
+    print( <span class="hljs-string">&quot;FAILED&quot;</span> <span class="hljs-keyword">if</span> len(next_states) == <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;traveled = &quot;</span>, len(traveled))
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">DFS</span><span class="hljs-params">(initial_state, end_state, Afunction)</span>:</span>
+    next_states = []
+    heapq.heappush(
+        next_states, (-Afunction(initial_state, end_state), initial_state))
+    traveled = set(tuple(initial_state))
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> len(next_states) == <span class="hljs-number">0</span>:
+        top_state = heapq.heappop(next_states)[<span class="hljs-number">-1</span>]
+        <span class="hljs-keyword">if</span> top_state == end_state:
+            print(<span class="hljs-string">&quot;traveled = &quot;</span>, len(traveled))
+            <span class="hljs-keyword">return</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">for</span> next_state <span class="hljs-keyword">in</span> sub_move_choice(top_state):
+                <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> tuple(next_state) <span class="hljs-keyword">in</span> traveled:
+                    heapq.heappush(
+                        next_states, (-Afunction(next_state, end_state), next_state))
+                    traveled.add(tuple(next_state))
+    print(<span class="hljs-string">&quot;FAILED&quot;</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">diferent_bit</span><span class="hljs-params">(one_state, another_state=final)</span>:</span>
+    <span class="hljs-keyword">return</span> -sum([<span class="hljs-number">0</span> <span class="hljs-keyword">if</span> x == y <span class="hljs-keyword">else</span> <span class="hljs-number">1</span> <span class="hljs-keyword">for</span>(x, y) <span class="hljs-keyword">in</span> zip(one_state, another_state)])
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">diferent_sum</span><span class="hljs-params">(one_state, another_state=final)</span>:</span>
+    <span class="hljs-keyword">return</span> -sum([abs(x - y) <span class="hljs-keyword">for</span>(x, y) <span class="hljs-keyword">in</span> zip(one_state, another_state)])
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">manhadun_space</span><span class="hljs-params">(one_state, another_state)</span>:</span>
+    space = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">9</span>, <span class="hljs-number">1</span>):
+      j = another_state.index(one_state[i])
+      space = space + abs(j % <span class="hljs-number">3</span> - i % <span class="hljs-number">3</span>) + abs(j // <span class="hljs-number">3</span> - i // <span class="hljs-number">3</span>)
+    <span class="hljs-keyword">return</span> -space
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x5DEE;&#x522B;&#xFF0C;&#x8FD8;&#x662F;&#x633A;&#x660E;&#x663E;&#x7684;&#x3002;</p>
+<pre><code class="lang-python">BFS(initial, final)
+DFS(initial, final, diferent_sum)
+DFS(initial, final, diferent_bit)
+DFS(initial, final, manhadun_space)
+
+<span class="hljs-comment"># traveled =  181447</span>
+<span class="hljs-comment"># traveled =  18656</span>
+<span class="hljs-comment"># traveled =  1327</span>
+<span class="hljs-comment"># traveled =  247</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../2.编程语言/编程语言学习路径.html" class="navigation navigation-prev " aria-label="Previous page: 编程语言学习路径">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="字符编码.html" class="navigation navigation-next " aria-label="Next page: 字符编码">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"post","title":"人工智能 搜索算法","date":"2017/10/11","tags":["Python","Artificial Intelligence"],"level":"3.1","depth":1,"next":{"title":"字符编码","level":"3.2","depth":1,"path":"3.计算机科学/字符编码.md","ref":"3.计算机科学/字符编码.md","articles":[]},"previous":{"title":"编程语言学习路径","level":"2.5","depth":1,"path":"2.编程语言/编程语言学习路径.md","ref":"2.编程语言/编程语言学习路径.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"summary":{},"search-pro":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"jskyzero's blog","gitbook":"*","description":"本博客为jskyzero所建，用来分享编程相关的内容"},"file":{"path":"3.计算机科学/人工智能-搜索算法.md","mtime":"2021-06-25T02:49:14.482Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-25T02:50:12.957Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

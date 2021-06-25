@@ -1,0 +1,27 @@
+{
+  "name": "gitbook.playground",
+  "version": "1.0.0",
+  "description": "--- description: 学习使人伟大。 / Learning Makes Person Great. ---",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-mathjax": "^2.0.0",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-summary": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gitbook serve .",
+    "publish-gitbook": "gitbook install;gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jskyzero/notes.jskyzero.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jskyzero/notes.jskyzero.com/issues"
+  },
+  "homepage": "https://github.com/jskyzero/notes.jskyzero.com#readme"
+}

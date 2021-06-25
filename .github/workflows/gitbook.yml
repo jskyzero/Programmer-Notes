@@ -1,0 +1,63 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: reveal-md CI
+
+on:
+  push:
+    branches: [ blog ]
+  pull_request:
+    branches: [ blog ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        # node-version: [10.x, 12.x, 14.x]
+        node-version: [10.21.0]
+
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+
+    - name: Install dependencies
+      run: |
+        npm i -g gitbook-cli
+        npm i -g graceful-fs
+        npm i
+
+
+    - name : GitBook Build
+      run: |
+        # git fetch origin blog
+        # git merge -X theirs origin/blog --allow-unrelated-histories
+        npm run publish-gitbook
+        npm run publish-gitbook
+
+
+
+    - name: Commit files
+      run: |
+        rm .git -rf; cd _book ; git init
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git commit -m "Add changes"
+        cd ../
+
+
+    - name: GitHub Push
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        branch: master
+        directory: _book
+        force: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
